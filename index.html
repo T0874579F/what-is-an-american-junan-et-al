@@ -5,46 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WIAA</title>
   <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Start Screen -->
   <div id="start-screen" class="screen">
     <h1>WIAA</h1>
     <label for="player-name">Enter your name:</label>
-    <input type="text" id="player-name" placeholder="Your Name">
+    <input type="text" id="player-name">
     <button id="start-button">Start</button>
   </div>
 
+  <!-- Character Selection Screen -->
   <div id="character-selection" class="screen hidden">
-    <h2>Select Your Character</h2>
+    <h1>Choose Your Character</h1>
     <div class="character-cards">
-      <div class="card" data-character="chinese-immigrant">Chinese Immigrant</div>
-      <div class="card" data-character="german-immigrant">German Immigrant</div>
-      <div class="card" data-character="factory-worker">Factory Worker</div>
-      <div class="card" data-character="factory-owner">Factory Owner</div>
-      <div class="card" data-character="slave">Slave</div>
-      <div class="card" data-character="slave-owner">Slave Owner</div>
+      <div class="card" data-character="Chinese Immigrant">Chinese Immigrant</div>
+      <div class="card" data-character="German Immigrant">German Immigrant</div>
+      <div class="card" data-character="Factory Worker">Factory Worker</div>
+      <div class="card" data-character="Factory Owner">Factory Owner</div>
+      <div class="card" data-character="Slave">Slave</div>
+      <div class="card" data-character="Slave Owner">Slave Owner</div>
     </div>
   </div>
 
+  <!-- Game Screen -->
   <div id="game-screen" class="screen hidden">
-    <h3 id="objective">Objective: </h3>
-    <p id="scenario">Scenario text here</p>
+    <h1 id="objective">Objective: </h1>
+    <p id="scenario">Scenario will appear here</p>
     <div id="choices">
-      <button id="choice-a">Choice A</button>
-      <button id="choice-b">Choice B</button>
+      <button>Choice A</button>
+      <button>Choice B</button>
     </div>
     <div id="progress-bar-container">
       <div id="progress-bar"></div>
     </div>
   </div>
 
+  <!-- End Screen -->
   <div id="end-screen" class="screen hidden">
-    <h2>Game Over</h2>
-    <p id="final-score">Your score: </p>
-    <h3>Leaderboard</h3>
+    <h1>Game Over</h1>
+    <p id="final-score">Your score:</p>
+    <h2>Leaderboard</h2>
     <ul id="leaderboard"></ul>
-    <button id="restart-button">Play Again</button>
+    <button id="restart-button">Restart</button>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
